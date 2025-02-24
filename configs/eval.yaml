@@ -1,0 +1,8 @@
+# Evaluation configuration
+policy:
+  checkpoint: "models/checkpoints/ppo_policy.pth"
+
+env:
+  name: "RoboticsEnv"
+  num_envs: 1
+  max_episode_steps: 500

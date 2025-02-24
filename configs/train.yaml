@@ -1,0 +1,16 @@
+# Training configuration
+env:
+  name: "RoboticsEnv"
+  num_envs: 1024
+  max_episode_steps: 500
+
+algorithm:
+  name: "PPO"
+  learning_rate: 3e-4
+  gamma: 0.99
+  clip_param: 0.2
+
+training:
+  num_epochs: 100
+  batch_size: 4096
+  use_gpu: true
